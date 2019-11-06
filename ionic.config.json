@@ -1,0 +1,7 @@
+{
+  "name": "SenacP.I",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
