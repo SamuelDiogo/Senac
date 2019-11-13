@@ -9,8 +9,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire';
-import { environment } from 'src/environments/environment.prod';
-import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth'
+import { environment } from 'src/environments/environment';
+import { AngularFireAuthModule } from '@angular/fire/auth'
 
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 
@@ -20,8 +20,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
   imports: [BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment),
-    AngularFireAuth,
+    AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
